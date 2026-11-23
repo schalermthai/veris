@@ -18,3 +18,7 @@ Copy or symlink a skill folder into `~/.claude/skills/` (personal) or `.claude/s
 ```sh
 ln -s "$PWD/skills/veris-story-verifier" ~/.claude/skills/veris-story-verifier
 ```
+
+## License
+
+Licensed under the [Apache License 2.0](LICENSE).

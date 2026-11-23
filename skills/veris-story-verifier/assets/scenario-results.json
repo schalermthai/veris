@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "story_id": "STORY-142",
+  "run_id": "run-0001",
+  "mode": "final",
+  "implementation_revision": null,
+  "worktree_dirty_at_start": null,
+  "bootstrap_status": "unknown",
+  "overall_verdict": "blocked",
+  "criteria": [
+    {
+      "id": "AC-1",
+      "description": "Owner can initiate transfer",
+      "required": true
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "S-01",
+      "name": "Initiate ownership transfer",
+      "criterion_ids": ["AC-1"],
+      "required": true,
+      "status": "not_run",
+      "expected": "The transfer request is created",
+      "actual": null,
+      "independent_check": {
+        "type": "persistent-state",
+        "status": "not_run",
+        "notes": ""
+      },
+      "evidence": [],
+      "defects": [],
+      "limitations": []
+    }
+  ],
+  "defects": [],
+  "unexpected_findings": [],
+  "environment_findings": [],
+  "regression_candidates": [],
+  "next_action": "Execute the acceptance scenario"
+}

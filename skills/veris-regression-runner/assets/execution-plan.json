@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "change_id": "PR-184",
+  "run_id": "run-0001",
+  "selection_file": ".veris/regression/selections/PR-184/runs/run-0001/selection.json",
+  "selection_sha256": "REPLACE_WITH_SHA256",
+  "head_revision": "HEAD_SHA",
+  "catalog_sha256": "CATALOG_SHA256",
+  "policy_sha256": "POLICY_SHA256",
+  "execution_policy_sha256": "POLICY_SHA256",
+  "strategy": "serial-per-case",
+  "cases": [
+    {
+      "id": "org-transfer-ownership",
+      "framework": "playwright",
+      "kind": "deterministic-e2e",
+      "test_file": "tests/e2e/org-transfer.spec.ts",
+      "argv": ["playwright", "test", "tests/e2e/org-transfer.spec.ts", "--reporter=json"]
+    }
+  ]
+}

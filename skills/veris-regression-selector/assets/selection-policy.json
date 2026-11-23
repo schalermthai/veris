@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "always_run_case_ids": [],
+  "mandatory_rules": [],
+  "cross_cutting_path_globs": [],
+  "semantic_classifier": {
+    "provider": "jev",
+    "model": "jev-latest",
+    "batch_size": 8,
+    "fallback": "coding-agent",
+    "require_coding_agent_review_for_exclusion": true
+  },
+  "escalation": {
+    "on_truncated_diff": "full",
+    "on_large_change": "broad",
+    "on_unknown_impact": "include",
+    "on_missing_mandatory_case": "block",
+    "on_invalid_catalog": "block"
+  },
+  "selection_limits": {
+    "max_changed_files_for_targeted": 40
+  }
+}

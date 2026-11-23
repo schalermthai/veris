@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "BENCH-001",
+  "kind": "selection",
+  "name": "Ownership-transfer dependency selection",
+  "ground_truth": {
+    "status": "confirmed",
+    "reviewer": "independent domain reviewer",
+    "evidence": [
+      ".veris/audits/benchmarks/ground-truth-BENCH-001.md"
+    ],
+    "complete_labels": false
+  },
+  "observed_file": ".veris/regression/selections/PR-184/runs/run-0001/selection.json",
+  "expected": {
+    "relevant_case_ids": ["org-transfer-ownership"],
+    "eligible_case_ids": []
+  },
+  "notes": "Illustrative only; replace paths and labels with independently confirmed evidence."
+}

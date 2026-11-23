@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "run_id": "run-0001",
+  "mode": "audit",
+  "created_at": null,
+  "scope": [
+    "bootstrap",
+    "story_verifier",
+    "regression_author",
+    "regression_selector",
+    "regression_runner",
+    "cross_component"
+  ],
+  "repository_revision": null,
+  "source_count": 0,
+  "status": "draft",
+  "limitations": [],
+  "approval": {
+    "challenge_authorized": false,
+    "disposable_environment_confirmed": false
+  }
+}

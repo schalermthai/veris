@@ -1,0 +1,26 @@
+# DEMONSTRATION ONLY: replace with real application services.
+# No host ports, bind mounts, external volumes, or Docker socket.
+services:
+  app:
+    image: veris-verify-demo:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["python", "-m", "http.server", "8000", "--bind", "0.0.0.0"]
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000', timeout=2)"
+      interval: 3s
+      timeout: 2s
+      retries: 10
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 128

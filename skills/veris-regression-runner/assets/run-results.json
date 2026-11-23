@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "change_id": "PR-184",
+  "run_id": "run-0001",
+  "selection_file": ".veris/regression/selections/PR-184/runs/run-0001/selection.json",
+  "selection_sha256": "REPLACE_WITH_SHA256",
+  "application_revision": "HEAD_SHA",
+  "mode": "run",
+  "overall_verdict": "blocked",
+  "cases": [
+    {
+      "id": "org-transfer-ownership",
+      "status": "not_run",
+      "attempts": [],
+      "cleanup": "not_run",
+      "triage": null,
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "selected": 1,
+    "passed": 0,
+    "failed": 0,
+    "blocked": 0,
+    "infra_error": 0,
+    "inconclusive": 0,
+    "flaky": 0,
+    "not_run": 1
+  }
+}

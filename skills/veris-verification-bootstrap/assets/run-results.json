@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "run_id": "run-0001",
+  "mode": "bootstrap",
+  "readiness": "blocked",
+  "previous_run_id": null,
+  "checks": [
+    {"id": "environment-start", "required": true, "status": "not_run", "notes": "", "evidence": []},
+    {"id": "surface-flow", "required": true, "status": "not_run", "notes": "", "evidence": []},
+    {"id": "independent-check", "required": true, "status": "not_run", "notes": "", "evidence": []},
+    {"id": "cleanup", "required": true, "status": "not_run", "notes": "", "evidence": []},
+    {"id": "clean-replay", "required": true, "status": "not_run", "notes": "", "evidence": []}
+  ]
+}

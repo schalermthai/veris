@@ -1,0 +1,88 @@
+schema_version: 1
+
+project:
+  name: null
+  root: "."
+  architecture: null
+  runtimes: []
+
+bootstrap:
+  version: "1.2.0"
+  status: blocked
+  latest_run_id: null
+  latest_mode: null
+  last_validated_at: null
+  latest_report: ".veris/bootstrap-report.md"
+  previous_baseline_run_id: null
+  blockers: []
+
+surfaces: []
+
+environment:
+  type: null
+  services: []
+  dependencies: []
+  required_env_names: []
+  external_test_identities: []
+  setup_command: null
+  start_command: null
+  readiness_command: null
+  reset_command: null
+  teardown_command: null
+  isolation:
+    strategy: null
+    parallel_safe: false
+    notes: null
+
+verification:
+  skill_playbook: ".veris/verification-playbook.md"
+  setup:
+    fixture_strategy: null
+    account_strategy: null
+  driver:
+    primary_surface: null
+    tool: null
+    prohibit_internal_shortcuts: true
+  checker:
+    expected_outcomes: []
+    independent_oracles: []
+    evidence_types: []
+  sample_workflow:
+    name: null
+    steps: []
+    observed_result: null
+    execution_status: not_run
+  required_checks:
+    - environment-start
+    - surface-flow
+    - independent-check
+    - cleanup
+    - clean-replay
+  supported_techniques: []
+  proposed_techniques: []
+  known_limitations: []
+
+sandbox:
+  enabled: false
+  template_required: false
+  provider: null
+  configuration_path: null
+  adapter_path: null
+  image_reference: null
+  image_digest: null
+  build_status: not_requested
+  validation_status: not_run
+  instance_strategy: ephemeral
+  cleanup_required: true
+
+safety:
+  production_access_allowed: false
+  synthetic_test_data_only: true
+  secret_values_in_repo: false
+  external_actions_require_approval: true
+  budget_limit: null
+
+handoff:
+  story_verifier_ready: false
+  missing_capabilities: []
+  next_actions: []

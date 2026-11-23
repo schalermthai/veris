@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "run_id": "run-0001",
+  "findings": [
+    {
+      "id": "EXAMPLE-001",
+      "fingerprint": "example-fingerprint",
+      "source": "manual",
+      "component": "regression-runner",
+      "category": "inconsistent_verdict",
+      "severity": "high",
+      "confidence": "confirmed",
+      "status": "open",
+      "summary": "Example only: a skipped case received PASS",
+      "expected": "Skipped cases must not count as passed",
+      "observed": "Recorded case status was pass",
+      "evidence": [],
+      "recommendation": "Correct result parsing and rerun the historical case",
+      "validation": "Demonstrate a skipped case blocks the passing gate"
+    }
+  ]
+}

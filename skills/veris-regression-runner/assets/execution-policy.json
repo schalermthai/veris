@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "provider": "docker-compose",
+  "require_selection_ready": true,
+  "require_exact_git_revision": true,
+  "allow_dirty_worktree": false,
+  "require_image_identity_enforcement": true,
+  "strategy": "serial-per-case",
+  "max_parallel_cases": 1,
+  "test_adapters": {
+    "playwright": {
+      "enabled": true,
+      "executable": "playwright",
+      "kind": "deterministic-e2e"
+    },
+    "pytest": {
+      "enabled": true,
+      "executable": "pytest",
+      "kind": "deterministic-e2e"
+    }
+  },
+  "automatic_retries": 0,
+  "allow_partial_retest": true,
+  "capture_compose_logs": true,
+  "require_cleanup_for_pass": true,
+  "require_framework_result_for_pass": true,
+  "block_on_unresolved_case": true
+}

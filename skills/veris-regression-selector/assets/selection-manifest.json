@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "change_id": "PR-184",
+  "run_id": "run-0001",
+  "source": {
+    "changes_file": "changes.json",
+    "base_revision": "BASE_SHA",
+    "head_revision": "HEAD_SHA",
+    "diff_sha256": "DIFF_HASH"
+  },
+  "catalog_sha256": "CATALOG_HASH",
+  "policy_sha256": "POLICY_HASH",
+  "status": "needs_review",
+  "breadth": "targeted",
+  "mandatory_case_ids": [],
+  "triggered_rules": [],
+  "selected_cases": [],
+  "excluded_cases": [],
+  "coverage_gaps": [],
+  "uncertainties": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "org-transfer-ownership",
+  "title": "Transfer organization ownership",
+  "status": "draft",
+  "source": {
+    "story_id": "STORY-142",
+    "run_id": "run-0002",
+    "results_file": ".veris/stories/STORY-142/runs/run-0002/results.json",
+    "revision": "SOURCE_REVISION",
+    "scenario_ids": ["S-01"],
+    "criterion_ids": ["AC-1"]
+  },
+  "coverage": {
+    "suite": "organizations",
+    "risk": "high",
+    "behaviors": [],
+    "surfaces": [],
+    "components": [],
+    "api_routes": [],
+    "tags": []
+  },
+  "test": {
+    "file": null,
+    "name": null,
+    "framework": null,
+    "kind": "deterministic-e2e",
+    "command": null,
+    "surface_actions": [],
+    "assertions": [],
+    "fixtures": [],
+    "cleanup": null
+  },
+  "execution": {
+    "runs": [],
+    "notes": null
+  },
+  "maintenance": {
+    "owner": null,
+    "notes": null
+  }
+}

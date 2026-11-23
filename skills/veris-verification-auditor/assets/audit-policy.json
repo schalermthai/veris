@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "audit": {
+    "default_mode": "audit",
+    "read_only_source_records": true,
+    "preserve_history": true,
+    "require_evidence": true
+  },
+  "scope": {
+    "bootstrap": true,
+    "story_verifier": true,
+    "regression_author": true,
+    "regression_selector": true,
+    "regression_runner": true,
+    "cross_component": true
+  },
+  "benchmark": {
+    "require_ground_truth": true,
+    "compare_same_case_hashes": true,
+    "minimum_cases_for_preliminary_report": 10
+  },
+  "challenge": {
+    "enabled": false,
+    "explicit_approval_required": true,
+    "disposable_environment_required": true,
+    "allow_production_mutations": false,
+    "automatic_fault_injection": false
+  },
+  "remediation": {
+    "auto_modify_other_skills": false,
+    "auto_modify_application_code": false,
+    "auto_merge": false,
+    "require_revalidation": true
+  }
+}

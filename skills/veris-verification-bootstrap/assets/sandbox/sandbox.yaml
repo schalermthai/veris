@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "template_status": "draft",
+  "runtime": {
+    "provider": "docker-compose",
+    "compose_file": ".veris/sandbox/compose.yaml",
+    "project_prefix": "veris",
+    "exec_service": "app",
+    "required_services": ["app"],
+    "images": [
+      {
+        "service": "app",
+        "reference": "veris-verify-demo:local",
+        "expected_local_id": null
+      }
+    ],
+    "enforce_image_identity": false,
+    "require_healthy": true,
+    "allowed_executables": ["python"],
+    "limits": {
+      "max_parallel_instances": 3,
+      "start_timeout_seconds": 90,
+      "execute_timeout_seconds": 180,
+      "destroy_timeout_seconds": 60
+    },
+    "isolation": {
+      "strategy": "per-instance",
+      "disposable": true,
+      "allow_host_bind_mounts": false,
+      "allow_external_volumes": false,
+      "allow_external_networks": false,
+      "allow_privileged": false,
+      "allow_fixed_host_ports": false
+    },
+    "security": {
+      "production_access": false,
+      "secrets_source": "runtime-injection"
+    }
+  }
+}
